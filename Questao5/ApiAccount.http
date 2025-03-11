@@ -1,0 +1,16 @@
+@ApiAccount_HostAddress = https://localhost:7140/conta-corrente
+
+GET {{ApiAccount_HostAddress}}/saldo/382D323D-7067-ED11-8866-7D5DFA4A16C9
+Content-Type: application/json
+Accept: application/json
+
+###
+POST {{ApiAccount_HostAddress}}/movimentacao
+Content-Type: application/json
+Accept: application/json
+
+{
+    "idConta": "382D323D-7067-ED11-8866-7D5DFA4A16C9",
+    "valor": 1.50,
+    "tipoMovimento": "C"
+}
